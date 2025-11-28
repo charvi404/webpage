@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIT Projects Relevance</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .card {
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    }
+    .nav-pills .nav-link.active {
+      background-color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center mb-4">Relevance of Projects in VIT</h2>
+
+  <!-- Nav Pills -->
+  <ul class="nav nav-pills justify-content-center mb-4" id="projectTabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="pill" href="#edi">EDI</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#dt">DT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#course">Course Projects</a>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content">
+    <!-- EDI -->
+    <div class="tab-pane fade show active" id="edi">
+      <div class="card p-4">
+        <h4>Engineering Design and Innovation (EDI)</h4>
+        <p>
+          EDI projects encourage students to apply engineering principles to real-world problems. 
+          They foster creativity, teamwork, and hands-on experience. At VIT, EDI helps bridge 
+          classroom learning with innovation and entrepreneurship.
+        </p>
+      </div>
+    </div>
+    <!-- DT -->
+    <div class="tab-pane fade" id="dt">
+      <div class="card p-4">
+        <h4>Design Thinking (DT)</h4>
+        <p>
+          DT projects emphasize problem-solving through empathy, ideation, and prototyping. 
+          At VIT, DT encourages students to understand user needs, think critically, 
+          and develop human-centered solutions that can have social and industrial impact.
+        </p>
+      </div>
+    </div>
+    <!-- Course Projects -->
+    <div class="tab-pane fade" id="course">
+      <div class="card p-4">
+        <h4>Course Projects</h4>
+        <p>
+          Course projects integrate knowledge from academic subjects into practical applications. 
+          They strengthen technical depth, analytical skills, and subject mastery. 
+          VIT students benefit by applying classroom concepts in real-life scenarios and research.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS + jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Optional: jQuery to handle click animations -->
+<script>
+  $(document).ready(function(){
+    $('.nav-link').on('click', function(){
+      $('.nav-link').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+</script>
+
+</body>
+</html>
